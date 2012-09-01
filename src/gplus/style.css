@@ -12,6 +12,7 @@ License URI:http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 */
 body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+
 html{color:#000;background:#fff;overflow-y:scoll}
 button,input,select,textarea{font:12px/1.5 arial}
 h1,h2,h3,h4,h5,h6{font-size:100%}
@@ -192,20 +193,21 @@ h2.title{
 	font-size:30px;
 	line-height:44px;
 	font-weight:normal;
-	text-shadow: 1px 1px 3px #888; 
+	text-shadow: 1px 1px 3px #888;
+	padding:0 10px; 
 }
 article h2.title a{
 	color:#333;
 }
 article p.desc{
-	font-size:12px;color:#aaa;border-bottom:1px dashed #ccc;padding-bottom:10px;
+	font-size:12px;color:#aaa;border-bottom:1px dashed #ccc;padding:0 10px 10px 10px;
 }
 article p.desc a{
 	color:#999;
 }
 article summary, article div.detail{
 	line-height:24px;
-	padding:20px 0;
+	padding:20px 10px;
 }
 article summary{
 	padding:5px 0\9;
@@ -278,6 +280,7 @@ article div.detail h2{
 }
 .post-page .entry{
 	margin-top:20px;
+	padding:0 10px;
 }
 .post-page h3{
 	line-height:30px;
@@ -351,6 +354,7 @@ blockquote{
 	-moz-text-overflow: ellipsis;
 	-webkit-text-overflow: ellipsis;
 	white-space: nowrap;
+	border-top:1px dashed #cccccc;
 }
 h2.comments-title{
 	height:44px;
@@ -358,7 +362,7 @@ h2.comments-title{
 	border-right:1px solid #efefef;
 }
 .comments-list {
-	padding: 20px 10px 30px 0;
+	padding: 10px 10px 30px;
 	border-right:1px solid #efefef;
 }
 .comments-list li{
@@ -479,3 +483,16 @@ a.rss img{
 		padding:10px 0;
 	}
 }
+body{overflow-x: hidden;}
+.readerwallmain{width:100%;float:left;overflow:hidden;position:relative;}
+.readerwall{padding:12px 0; font-size:12px;overflow:visible;float:left;width:520px;position:relative;left:50%;}
+.readerwall li{right:50%;position:relative;width:40px;height:40px;margin:0;padding:5px 0 5px 5px;float:left;list-style:none;border: 1px solid #DFDFDF;-moz-border-radius:2px;-khtml-border-radius: 2px;-webkit-border-radius: 2px;border-radius: 2px;}
+.readerwall .active-bg{width:40px;height:2px;_font-size:0;margin:-3px 0 0 -2px;background:#DFDFDF; }
+.readerwall .active-degree{background:red;width:40px;height:2px;_font-size:0;}
+.readerwall a{width:36px;height:36px;display:inline-block;position:relative;margin:0 0px 2px 0; text-decoration:none}
+.readerwall .pic{position:absolute;top:0;left:0;z-index:100;width:36px;height:36px;display:block;-webkit-transform-style:preserve-3d;-webkit-backface-visibility:hidden;-webkit-transition:all .4s ease-in-out;-moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;border-radius:4px; text-indent:-9999px}
+.readerwall .num{position:absolute;top:0;left:0;z-index:99;width:34px;height:34px;line-height:34px;color:#E02523;font-size:18px;font-weight:bold;display:block;background:#fff;text-align:center;border:#bbb 1px solid;box-shadow:0 0 4px #ccc;-webkit-transform:rotateY(-180deg);-webkit-transform-style:preserve-3d;-webkit-backface-visibility:hidden;transition:all .4s ease-in-out;-webkit-transition:all .4s ease-in-out;-moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;border-radius:4px}
+.readerwall .name{position:absolute;top:0;left:0;color:#333;display:block;width:1px;height:1px;overflow:hidden;-webkit-transform-style:preserve-3d;-webkit-backface-visibility:hidden;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;text-align:center}
+.readerwall a:hover .pic{z-index:100;border-color:#eee;-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg)}
+.readerwall a:hover .num{z-index:101;-webkit-transform:rotateY(0deg);-moz-transform:rotateY(0deg);opacity:.8}
+.readerwall a:hover .name{top:-28px;left:-38px;z-index:101;padding:4px 6px;height:20px;line-height:20px;overflow:hidden;background:#fff;border-radius:2px;box-shadow:0 0 3px #000;min-width:100px;opacity:.8}

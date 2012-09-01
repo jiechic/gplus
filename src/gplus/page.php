@@ -1,9 +1,7 @@
-<?php if (!gplus_is_pjax()) { get_header();$options = gplus_get_options(); ?>
+<?php if (!gplus_is_pjax()) { get_header();?>
 <div id="content">
 <?php };?>
-
-
-	<?php the_post(); ?>
+	<?php the_post(); $options = gplus_get_options(); ?>
 	<section class="post-page">
 		<h2 class="title"><?php the_title() ?></h2>
 		<div class="entry">

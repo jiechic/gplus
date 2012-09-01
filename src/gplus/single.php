@@ -24,7 +24,7 @@
 		</div>
 		<?php if(!$options['use_vender_comment']): ?>
 		<div>-- EOF -- 看完了，<a href="#commentForm">留个脚印~~</a> ^_^</div>
-	<?php endif; ?>
+		<?php endif; ?>
 	</article>
 	<?php comments_template( '', true ); ?>
 	
