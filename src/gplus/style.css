@@ -400,6 +400,9 @@ h3.related_post_title{
 .comment-item{
 	padding:5px 0;
 }
+#respond{
+	padding:0 10px;
+}
 #submit{
 	padding:5px 10px;
 }
