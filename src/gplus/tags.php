@@ -17,6 +17,12 @@ if (!gplus_is_pjax()) { get_header(); ?>
 	<?php comments_template( '', true ); ?>	
 <?php if (!gplus_is_pjax()) {?>
 </div>
+<<<<<<< HEAD
 <?php get_sidebar() ?>
 <?php get_footer() ?>
 <?php };?>
+=======
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
+<?php };?>
+>>>>>>> welefen/master
