@@ -71,7 +71,6 @@ $(function(){
 			}
 		});
 		showLine();
-		typeof pjaxCallback != 'undefined' && pjaxCallback && pjaxCallback();
 
 		removeStorageCache();
 
@@ -91,7 +90,8 @@ $(function(){
 			if(href.indexOf('feed')> -1 || href.indexOf('wp-login.php')> -1 ||href.indexOf('wp-content/') > -1 || href.indexOf('wp-admin/') > -1|| href.indexOf('/lab/') > -1){
 				return true;
 			}
-		}
+		},
+		callback: pjaxCallback
 	});
 	function removeStorageCache(){
 		//remove current href cache when a comment added.
